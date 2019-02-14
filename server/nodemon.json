@@ -1,0 +1,7 @@
+{
+    "env":{
+        "Username":"adminnew",
+        "Password":"admin123",
+        "DatabaseName":"ados"
+    }
+}
