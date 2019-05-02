@@ -73,6 +73,14 @@ export default class view extends Component {
             </div>
 </div>
 <div className="row">
+<div className="col"><div className="card bg-info text-white">
+      <h4 className="card-title">Last Seven Days Orders</h4>
+              <div className="card-body">
+                <p className="card-text">There are currently 9 Doctors Registgerd in ou database</p>
+                <a href="/WeeklyOrders" className="btn btn-primary">Weekly Orders</a>
+              </div>
+            </div>
+            </div>
       <div className="col"><div className="card bg-info text-white">
       <h4 className="card-title">Doctor At Home</h4>
               <div className="card-body">

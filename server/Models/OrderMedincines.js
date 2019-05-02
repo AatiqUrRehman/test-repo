@@ -12,6 +12,9 @@ const OrderMedicines=new Schema({
     medId:{
         type:String,
         required:true
+    },
+    created_at:{
+        type:Date
     }
 });
 module.exports=mongoose.model("ordermedicines",OrderMedicines)

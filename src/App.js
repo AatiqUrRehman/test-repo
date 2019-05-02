@@ -24,6 +24,7 @@ import DoctorAtHomes from "./Pages/DoctorAtHomes"
 import OrderMedicines from "./Pages/OrderMedicines"
 import Medicnes from "./Pages/Medicnes"
 import Appointments from './Pages/Appointments';
+import WeeklyOrders from "./Pages/OrderMedicines/WeeklyOrders"
 class App extends Component {
   render() {
     return (
@@ -41,6 +42,7 @@ class App extends Component {
         <Route exact path="/Appointments" component={Appointments}/>
         <Route exact path="/Appointments/Create" component={CreateAppointment}/>
         <Route exact path="/Appointments/Update/:id" component={AppointmentUpdate}/>
+        <Route exact path="/WeeklyOrders" component={WeeklyOrders}></Route>
         <Route exact path="/Patients/Create" component={CreatePatient}></Route>
         <Route exact path="/Patients/Update/:id" component={PatientUpdate}></Route>
         <Route exact path="/DoctorCategories/Create" component={createDoctorCategory}></Route>

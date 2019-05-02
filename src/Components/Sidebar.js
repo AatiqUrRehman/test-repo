@@ -52,6 +52,12 @@ export default class Sidebar extends Component {
          </li>
          <hr className="sidebar-divider my-0"/>
          <li className="nav-item">
+           <a className="nav-link" href="/weeklyorders">
+             <i className="fas fa-fw fa-tachometer-alt"></i>
+             <span>WeeklyOrders</span></a>
+         </li>
+         <hr className="sidebar-divider my-0"/>
+         <li className="nav-item">
            <a className="nav-link" href="/DoctorCategories">
              <i className="fas fa-fw fa-tachometer-alt"></i>
              <span>DoctorCategories</span></a>

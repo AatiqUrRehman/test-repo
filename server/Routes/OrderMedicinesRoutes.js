@@ -11,6 +11,20 @@ router.get("",(req,res)=>{
     }
     })
     });
+  router.get("/weeklyorders",(req,res)=>{
+        return OrderMedicines.find({
+            created_at: {
+        $gte: new Date(new Date() - 7 * 60 * 60 * 24 * 1000)
+    }
+        },(err,orderMedicines)=>{
+    if(err){
+    console.log("Erroro Here")
+    }
+    else{
+        res.send(orderMedicines)
+    }
+    }) 
+    });
     router.post("",(req,res)=>{
         var orderMedicine=new OrderMedicines();
         orderMedicine.user_email=req.body.useremail;
